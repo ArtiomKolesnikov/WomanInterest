@@ -29,7 +29,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name', 'Womaninterests') }}
                     </a>
                 </div>
 
@@ -63,7 +63,11 @@
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
+
                                 </ul>
+                            </li>
+                            <li>
+                                <a href="{{route('home')}}">личный кабинет</a>
                             </li>
                         @endguest
                     </ul>

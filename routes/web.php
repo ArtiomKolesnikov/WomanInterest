@@ -11,10 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', 'IndexController@index');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/cosmetics', 'CosmeticsController@index')->name('cosmetics');
+Route::get('/cosmetics/create', 'CosmeticsController@create')->name('cosmetics_create_post');
+Route::get('/cosmetics/{post}', 'CosmeticsController@post')->name('cosmetics_post');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+

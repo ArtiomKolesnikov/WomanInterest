@@ -10,4 +10,11 @@ class IndexController extends Controller
     {
         return view('main.index');
     }
+
+    public function fbvzSell()
+    {
+        return view('fbvz_sell');
+    }
+
+
 }

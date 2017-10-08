@@ -15,6 +15,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'IndexController@index');
+
+Route::get('/fbvz_sell', 'IndexController@fbvzSell')->name('fbvz_sell');
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/cosmetics', 'CosmeticsController@index')->name('cosmetics');
 Route::get('/cosmetics/create', 'CosmeticsController@create')->name('cosmetics_create_post');

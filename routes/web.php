@@ -14,10 +14,11 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', 'IndexController@index');
+Route::view('/fbvz_sell','fbvz_sell')->name('fbvz_sell');
+Route::view('/add_flat','add_flat')->name('add_flat');
 
-Route::get('/fbvz_sell', 'IndexController@fbvzSell')->name('fbvz_sell');
 
+Route::view('/', 'main.index');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/cosmetics', 'CosmeticsController@index')->name('cosmetics');
 Route::get('/cosmetics/create', 'CosmeticsController@create')->name('cosmetics_create_post');

@@ -1,0 +1,58 @@
+.add_flat_block
+{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+  .add_flat_form
+  {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .add_flat_form_part
+  {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin: 20px 0;
+    padding: 20px;
+  }
+
+  .form_part_inputs_block
+  {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .add_flat_form_row
+  {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  .form_row_part
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 310px;
+  }
+
+  .form_select
+  {
+    flex: 1 1 50%;
+
+  }
+
+  .form_input
+  {
+    flex: 1 1 50%;
+
+  }
+}

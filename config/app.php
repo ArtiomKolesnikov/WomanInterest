@@ -179,6 +179,7 @@ return [
 
         //Users Providers
         Collective\Html\HtmlServiceProvider::class,
+        Falur\Breadcrumbs\Providers\ServiceProvider::class,
 
     ],
 
@@ -232,6 +233,8 @@ return [
         //Users aliases
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'Breadcrumbs' => Falur\Breadcrumbs\Facades\Breadcrumbs::class,
+        'BreadcrumbsFactory' => Falur\Breadcrumbs\Facades\BreadcrumbsFactory::class,
     ],
 
 ];

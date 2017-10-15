@@ -41,7 +41,6 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{route('fbvz_sell')}}">продать жильё</a></li>
                         <!-- Authentication Links -->
                         @guest
                             <li><a href="{{ route('login') }}">Login</a></li>
@@ -75,8 +74,9 @@
                 </div>
             </div>
         </nav>
-
+        {!! Breadcrumbs::render() !!}
         @yield('content')
+        @include('components.btn_back')
     </div>
 
     <!-- Scripts -->

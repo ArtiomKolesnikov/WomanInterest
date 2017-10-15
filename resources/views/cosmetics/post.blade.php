@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('components.btn_back')
     <div class="container">
         <div class="panel">
                 <h1 class="title center">{{$post->company_name}}</h1>

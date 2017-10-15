@@ -18,8 +18,11 @@
             </div>
         </div>
     </div>
-    <div class="row flex-center">
-        <a href="{{route('cosmetics_create_post')}}" class="btn btn-primary">добавить пост</a>
+    <div class="row flex-center container">
+
+            <a href="{{route('cosmetics_create_post')}}" class="btn btn-primary csm_btn">добавить пост</a>
+            <a href="{{route('cosmetics')}}" class="btn btn-primary">кометика</a>
+
     </div>
 </div>
 @endsection
